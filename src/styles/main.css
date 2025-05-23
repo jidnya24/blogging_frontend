@@ -1,0 +1,119 @@
+/* Main Styles */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-color: #f8f9fa;
+  --text-color: #2c3e50;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color) !important;
+}
+
+/* Cards */
+.blog-card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Blog Post */
+.blog-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.blog-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Author Info */
+.author-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: var(--secondary-color);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Editor */
+.ck-editor__editable {
+  min-height: 300px;
+}
+
+/* Authentication Forms */
+.auth-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Loading Spinner */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-card {
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
